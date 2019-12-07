@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Question 1</h2>
+
+<script>
+    function Solve(){
+    var cost_price = document.getElementById("cost_price").value;
+    var sell_price = document.getElementById("sell_price").value;
+    var inventory = document.getElementById("inventory").value;
+    var ans;
+    ans = (sell_price * inventory).toFixed(2) - (cost_price * inventory).toFixed(2);
+    console.log(ans);
+    document.getElementById("Ans").innerText = ans;
+    }
+    
+    </script>
+
+<label>Input cost_price</label> <input id="cost_price"/><br/>
+<label>Input sell_price</label> <input id="sell_price"/><br/>
+<label>Input inventory</label> <input id="inventory"/><br/>
+<button onclick="Solve()">Solve</button><br>
+<label>Ans</label> <label id = "Ans"></label>
+
+</body>
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Question 3</h2>
+
+<script>
+
+function Solve(){
+    var WinningNumber = document.getElementById("WinningNumber").value;
+    console.log(WinningNumber);
+    var res = WinningNumber.slice(4, 6);
+    console.log(res);
+
+    var arrayAns =[];
+
+for (i=0 ; i<=9999 ; i++){
+    var str = "" + i;
+    var pad = "0000";
+    var ans = pad.substring(0, pad.length - str.length) + str + res;
+    // console.log(ans);
+    arrayAns.push(ans);
+}
+
+console.log(arrayAns);
+
+
+}
+
+</script>
+
+<label>Input winning number :</label> <input id="WinningNumber" maxlength="6"><br/>
+<button onclick="Solve()">Solve</button><br>
+<label>After click Solve button please open Inspect mode(F12)</label>
+
+</body>
+</html> 

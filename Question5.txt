@@ -1,0 +1,3 @@
+SELECT p.name,c.car FROM Owner o
+INNER JOIN Person p on o.PersonID = p.id
+INNER JOIN Car c on o.CarID = c.id
